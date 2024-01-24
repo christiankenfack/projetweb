@@ -1,38 +1,349 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#vanta {
+    width: 100%;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    height: 70px;
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Title-script {
+    margin-left: 220px;
+    margin-top: 120px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.welcome {
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 0px;
+    word-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.devtasker-word {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 42px;
+    color: #5E17EB;
+    letter-spacing: 5px;
+}
+
+.button-connect {
+    box-shadow: none;
+    text-transform: none;
+    width: 200px;
+    height: 55px;
+    color: #fff;
+    background: #2f008e;
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid;
+    line-height: 1.5;
+    background-color: #5E17EB;
+    border-color: #5E17EB;
+    color: white;
+    margin-left: 220px;
+    margin-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.button-connect:hover {
+    background-color: #2f008e;
+    border-color: #2f008e;
+    box-shadow: none;
+    transition: 1s;
+}
+
+.link-inscription {
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.link-inscription:hover {
+    color: #5E17EB;
+    transition: 0.5s ease-out;
+}
+
+/*CSS DES SOUS PAGES*/
+
+/*css task*/
+
+.Task-contain {
+    background-color: #5e17eb48;
+    width: 970px;
+    margin-left: 250px;
+    margin-top: 0px;
+}
+
+.title-task {
+    text-align: center;
+}
+
+.New {
+    color: #150050;
+}
+
+.name-contain {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+#Task-name {
+    margin-left: 35px;
+}
+
+.Inputs-task-name {
+    background-color: #5e17eb48;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 200px;
+    height: 25px;
+    border-bottom: solid #2f008e 1px;
+    margin-bottom: 15px;
+}
+
+
+
+#Task-name {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+#Date {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.Inputs-Date {
+
+    width: 100px;
+    height: 20px;
+    background-color: #5e17eb00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: solid #2f008e 1px;
+
+}
+
+
+
+.niveau-text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.Niveau-select {
+    margin-left: 8px;
+    background-color: #5e17eb48;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: solid #2f008e 1px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 120px;
+    height: 20px;
+
+}
+
+.chk-niveau {
+    margin-left: -40px;
+}
+
+.btn-create-task {
+    border-radius: 50px;
+    width: 55px;
+    height: 35px;
+    background: #2f008e61;
+    border: none;
+    margin-top: -10px;
+    margin-left: 5px
+}
+
+.btn-create-task:hover {
+    background-color: #2f008ee6;
+    transition: 18ms;
+}
+
+.Todo-contain {
+    background-color: #5e17eb48;
+    width: 970px;
+    margin-left: 250px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.Data-Todo {
+    background-color: #5e17eb00;
+    width: 200px;
+    height: 40px;
+    border-right: solid #2f008e 1px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+#errorMessage {
+    width: 150px;
+    height: 60px;
+    background-color: rgba(94, 23, 235, 0.272);
+    margin-left: 254px;
+    border-right: #5e17ebc5 solid 6px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* CSS DE PROFIL*/
+
+.Info-profil {
+    background-color: #5e17eb48;
+    width: 970px;
+    margin-left: 250px;
+    height: 110vh;
+    position: fixed;
+
+}
+
+.U-name {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.username {
+    display: flex;
+
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgba(94, 23, 235, 0.884);
+    width: 300px;
+    margin-left: 15px;
+
+}
+
+.Log-out {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background-color: #2f008e;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.Log-out:hover {
+    background-color: #5E17EB;
+    transition: 0.5s;
+}
+
+/*CSS DE PROJECT*/
+
+.infoProjectContain {
+    background-color: #5e17eb48;
+    width: 970px;
+    margin-left: 250px;
+    margin-top: 0px;
+    height: 110vh;
+    position: absolute;
+    color: #1e1f20;
+}
+
+.infoProject {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.New-project {
+    font-size: 40px;
+}
+
+.detail-information {
+    margin-top: 20px;
+}
+
+.Title-information {
+    font-size: 13px;
+}
+
+.projectTitle {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border: white 1px solid;
+    margin-top: 2px;
+}
+
+.ressourceSelect {
+    outline: none;
+    width: 400px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.projectTime {
+    outline: none;
+    border: white 1px solid;
+    margin-top: 2px;
+}
+
+.projectDescription {
+    width: 400px;
+    height: 100px;
+    outline: none;
+    border: white 1px solid;
+    margin-top: 2px;
+}
+
+.create-new-project {
+    width: 400px;
+    text-align: center;
+    height: 40px;
+    background-color: #541ec0;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 100;
 }
