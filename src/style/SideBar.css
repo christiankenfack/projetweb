@@ -28,34 +28,16 @@
 
 /* Code de Contain.jsx */
 
-
+.Container {
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 280px;
+}
 
 .back-contain {
     height: 100vh;
     width: 970px;
     margin-left: -517px;
 
-}
-
-/*Code rigth-bar*/
-.first-div {
-    background-color: black;
-    height: 100vh;
-    position: fixed;
-    width: 300px;
-}
-
-.img-pub {
-    height: 280px;
-    width: 280px;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.Container {
-    height: 300px;
-    width: 297px;
-    margin-left: 300px;
-    margin-top: 200px;
 }

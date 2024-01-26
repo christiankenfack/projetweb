@@ -1,4 +1,5 @@
 import React from "react";
+import SlideBar from "../pages-component/SideBar";
 
 
 
@@ -7,7 +8,7 @@ import React from "react";
 const Repport = () => {
     return (
         <>
-            <h1> Rapport</h1>
+            <SlideBar />
         </>
     )
 }

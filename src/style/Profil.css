@@ -1,0 +1,49 @@
+.Info-profil {
+    background-color: #5e17eb48;
+    width: 970px;
+    margin-left: 250px;
+    height: 110vh;
+    position: fixed;
+
+}
+
+.U-name {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.username {
+    display: flex;
+
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgba(94, 23, 235, 0.884);
+    width: 300px;
+    margin-left: 15px;
+
+}
+
+.Log-out {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background-color: #2f008e;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
+.Log-out:hover {
+    background-color: #5E17EB;
+    transition: 0.5s;
+}

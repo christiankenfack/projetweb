@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import SideBar from "../pages-component/SideBar";
 import { Checkbox, Fab, ListItemIcon, Tooltip } from "@mui/material";
 import { v4 as uuidv4 } from 'uuid';
-
-import "../../../app.css"
-import { AlarmOn, DeleteForeverOutlined, RadioButtonChecked, RadioButtonUnchecked, Send } from "@mui/icons-material";
+import "../../../style/Task.css"
+import { AlarmOn, DeleteForever, DeleteForeverOutlined, RadioButtonChecked, RadioButtonUnchecked, Send } from "@mui/icons-material";
 
 
 
@@ -20,9 +19,12 @@ const Tasks = () => {
     return (
         <div>
             <SideBar />
-            <TaskForm addTodo={(todo) => {
-                setTodos((prev) => [...prev, todo]);
-            }} />
+
+            <div className="Div-TaskForm">
+                <TaskForm addTodo={(todo) => {
+                    setTodos((prev) => [...prev, todo]);
+                }} />
+            </div>
             {todos.map(todo => {
                 return <Todo
                     key={todo.id}
@@ -31,8 +33,12 @@ const Tasks = () => {
                     level={todo.level}
                     startDate={todo.startDate}
                     endDate={todo.endDate}
-                    onDelete={() => deleteTodo(todo.id)} />;
+                    onDelete={() => deleteTodo(todo.id)} />
+
+
             })}
+
+
         </div>
     )
 }
@@ -136,6 +142,7 @@ const TodoCheck = ({ }) => {
 
     return (
         <Checkbox sx={{
+            zIndex: 0,
             color: "#2f008ee6", '&.Mui-checked': {
                 color: "#2f008ee6",
             }
@@ -160,6 +167,7 @@ const Rappel = () => {
                     marginTop: 1,
                     height: 35,
                     width: 35,
+                    zIndex: 0,
                     bgcolor: '#5e17eb48',
                     '&:hover': {
                         bgcolor: "#5E17EB"
@@ -175,7 +183,7 @@ const Rappel = () => {
     )
 }
 
-/*Compoant delete permettant de supprimer la taches*/
+/*Composant delete permettant de supprimer la taches*/
 
 const Delete = ({ onClick }) => {
     return (
@@ -188,6 +196,7 @@ const Delete = ({ onClick }) => {
                     height: 35,
                     marginTop: 1,
                     width: 35,
+                    zIndex: 0,
                     bgcolor: '#5e17eb48',
                     '&:hover': {
                         bgcolor: "#5E17EB"
@@ -196,7 +205,7 @@ const Delete = ({ onClick }) => {
                 }}>
 
                 <Fab color="primary" aria-label="add">
-                    <DeleteForeverOutlined />
+                    <DeleteForever />
                 </Fab>
 
             </Tooltip>

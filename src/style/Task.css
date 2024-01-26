@@ -1,0 +1,158 @@
+.Div-TaskForm {
+    padding-top: 30px;
+}
+
+.Task-contain {
+    background-color: #5e17eb48;
+    width: 950px;
+    margin-left: 260px;
+    border-radius: 20px;
+}
+
+.title-task {
+    text-align: center;
+}
+
+.New {
+    color: #150050;
+}
+
+.name-contain {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: -25px;
+}
+
+#Task-name {
+    margin-left: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.Inputs-task-name {
+    background-color: #5e17eb48;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 200px;
+    height: 25px;
+    border-bottom: solid #2f008e 1px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+#Task-name {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+#Date {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.Inputs-Date {
+
+    width: 100px;
+    height: 20px;
+    background-color: #5e17eb00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: solid #2f008e 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+
+
+.niveau-text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.Niveau-select {
+    margin-left: 8px;
+    background-color: #5e17eb48;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: solid #2f008e 1px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 120px;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.chk-niveau {
+    margin-left: -40px;
+}
+
+.btn-create-task {
+    border-radius: 50px;
+    width: 55px;
+    height: 35px;
+    background: #2f008e61;
+    border: none;
+    margin-top: -10px;
+    margin-left: 5px
+}
+
+.btn-create-task:hover {
+    background-color: #2f008ee6;
+    transition: 18ms;
+}
+
+.Todo-contain {
+    background-color: #5e17eb48;
+    width: 950px;
+    margin-left: 260px;
+    margin-top: 15px;
+    display: flex;
+    border-radius: 25px;
+}
+
+.Data-Todo {
+    background-color: #5e17eb00;
+    width: 200px;
+    height: 40px;
+    border-right: solid #2f008e 1px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+#errorMessage {
+    width: 150px;
+    height: 60px;
+    background-color: rgba(94, 23, 235, 0.272);
+    margin-left: 254px;
+    border-right: #5e17ebc5 solid 6px;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 10px;
+}

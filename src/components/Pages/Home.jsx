@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ParticulesBg from "./ParticulesBg";
 import logo from "../Assets/log2-1.png";
 
 
 const Button = () => {
-    /*const navigate = useNavigate();
-    function handleClick() {
-        navigate('./Tasker')
-    }*/
+
 
 
     return (
@@ -25,7 +22,7 @@ const Button = () => {
             </div>
 
             <Link to="/Login">
-                <button className="button-connect" /*onClick={handleClick}*/>
+                <button className="button-connect">
                     se connecter
                 </button>
             </Link>

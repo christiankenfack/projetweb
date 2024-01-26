@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SideBar from "../pages-component/SideBar";
 import { Link } from "react-router-dom";
+import "../../../style/Profil.css"
 
 
 

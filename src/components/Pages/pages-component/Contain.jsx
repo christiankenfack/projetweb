@@ -1,5 +1,5 @@
 import React from "react";
-import '../Tasker.css'
+import "../../../style/SideBar.css"
 import { Box } from "@mui/material";
 import reunion from "../../Assets/reuniontech.jpg"
 

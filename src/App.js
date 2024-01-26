@@ -4,9 +4,9 @@ import Login from "./components/LoginSignup/LoginSignup";
 import Home from "./components/Pages/Home";
 import Tasker from "./components/Pages/Tasker"
 import Profile from "./components/Pages/sous-pages/Profile";
-import Project from "./components/Pages/sous-pages/Project";
+import MyProjects from "./components/Pages/sous-pages/MyProjects";
 import Repport from "./components/Pages/sous-pages/Repport";
-import Tasks from "./components/Pages/sous-pages/Tasks"
+import Tasks from "./components/Pages/sous-pages/Tasks";
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Tasker" element={<Tasker />} />
-        <Route path="/Project" element={<Project />} />
+        <Route path="/MyProjects" element={<MyProjects />} />
         <Route path="/Repport" element={<Repport />} />
         <Route path="/Tasks" element={<Tasks />} />
         <Route path="/Profile" element={<Profile />} />
